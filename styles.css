@@ -1,0 +1,654 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 861px; /* Adjust the maximum width as needed */
+  margin: 0 auto;
+  position: relative;
+}
+
+.search-box {
+  width: 60%;
+  max-width: 643px; /* Adjust the maximum width as needed */
+  height: 36px;
+  padding: 0 15px;
+  border: 1px solid black;
+  border-radius: 32px;
+  font-size: 16px; /* Adjust font size if needed */
+  font-family: Inter, sans-serif;
+  color: black; /* Text color for typed input */
+  background: white;
+  outline: none;
+}
+
+.search-button {
+  height: 36px;
+  padding: 0 15px;
+  background: #263141;
+  border: none;
+  border-radius: 32px;
+  color: white;
+  font-size: 16px; /* Adjust font size to match the search box */
+  font-family: Kanit, sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  margin-left: 10px; /* Space between search box and button */
+}
+
+.search-box:focus {
+  border-color: #263141; /* Optional: change border color on focus */
+}
+
+
+.logo-container {
+    width: 100px;
+    height: 70px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.logo-image {
+    width: 80px;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+}
+
+.logo-text {
+    width: 100px;
+    height: 15px;
+    left: 60px;
+    top: 65px;
+    position: absolute;
+}
+
+.text-a {
+    left: -20px;
+    top: -30px;
+    position: absolute;
+    color: black;
+    font-size: 18px;
+    font-family: Inter;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+.text-b {
+    left: 10px;
+    top: -30px;
+    position: absolute;
+    color: #07A419;
+    font-size: 18px;
+    font-family: Inter;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown button */
+.dropbtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* Dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    background: white;
+}
+
+.dropdown-content a {
+    padding: 12px 18px;
+    text-decoration: none;
+    display: block;
+    color: inherit;
+}
+/* CSS for hover state */
+.dropdown-content a:hover {
+    background-color: #07A419; /* Background color on hover */
+    color: white; /* Text color on hover */
+}
+
+/* CSS for active state */
+.dropdown-content a.active {
+    background-color: #07A419; /* Background color for the active link */
+    color: white; /* Text color for the active link */
+    font-weight: bold; /* Optional: Make text bold */
+}
+
+
+
+/* Show the dropdown content when hovered */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #eaeaea;
+    padding: 20px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .nav-links a {
+    margin-right: 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.navbar .auth-buttons a {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.navbar .login-btn {
+    background-color: #ffffff;
+    color: #07A419;
+    border: 1px solid #07A419;
+}
+
+.navbar .signup-btn {
+    background-color: #07A419;
+    color: #ffffff;
+    border: 1px solid #07A419;
+}
+
+.career-section {
+    width: 100%;
+    max-width: 1559px;
+    height: 434px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.background {
+    width: 80%;
+    height: 300px;
+    position: absolute;
+    background: #474F5A;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 46px;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    display: flex; /* Use flexbox for easy alignment */
+    align-items: center;
+    justify-content: space-between; /* Space out content */
+    padding: 0 20px; /* Add some padding */
+}
+
+.text-content {
+    color: white;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    max-width: 50%; /* Limit width of the text */
+}
+
+.text-content h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0 0 20px 0; /* Add margin to separate from buttons */
+}
+
+.register-button, .login-button {
+    width: 80px; /* Reduced width */
+    height: 25px; /* Reduced height */
+    border-radius: 30px; /* Keep the roundness consistent with the new size */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px; /* Reduced font size */
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    margin-right: 10px; /* Space between buttons */
+    text-decoration: none;
+    padding: 5px 10px; /* Adjusted padding for better proportions */
+}
+
+.register-button {
+    background: #6DDC7F;
+}
+
+.login-button {
+    background: #07A419;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.side-image {
+    width: 224px;
+    height: auto;
+    max-height: 200px; /* Adjust max height */
+    margin: 120px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+/* Features Section */
+.features {
+    padding: 50px 0;
+    background-color: #ffffff;
+}
+
+.features .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.features .feature-item {
+    text-align: center;
+    width: 45%;
+
+}
+
+.features .feature-item h2 {
+    font-size: 18px;
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+.features .feature-item p {
+    margin-top: 10px;
+    font-size: 24px;
+    color: #666;
+    word-wrap: break-word;
+    font-family: Inter;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-links a {
+    color: #ffffff;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+footer .social-media a {
+    margin-left: 10px;
+}
+
+footer .social-media img {
+    width: 20px;
+    height: 20px;
+}
+.text-container {
+  width: 761px;
+  height: 44px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.text-part-1, .text-part-2, .text-part-3 {
+  text-align: center;
+  font-size: 36px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
+.text-part-1 {
+  color: black;
+}
+
+.text-part-2 {
+  color: #07A419;
+}
+
+.text-part-3 {
+  color: black;
+}
+/* Container to hold all cards */
+.cards-container {
+    display: flex;
+    justify-content: space-around; /* Center cards with equal spacing */
+    align-items: flex-start;
+    max-width: 1200px; /* Optional max width */
+    margin: 0 auto; /* Center the container on the page */
+    padding: 20px 0; /* Add vertical padding */
+}
+
+/* Common card styles */
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border: 1px solid #DEDEDE;
+    padding: 20px;
+    width: 300px; /* Fixed width for each card */
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Card image styling */
+.card-image {
+    width: 120px; /* Adjust size of the images */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Card title */
+.card-title {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 10px;
+}
+
+/* Card text */
+.card-text {
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #333333;
+    line-height: 1.5;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        align-items: center;
+    }
+    .card {
+        width: 80%; /* Make cards take up more space */
+        margin-bottom: 20px; /* Space between stacked cards */
+    }
+}
+.container2 {
+    display: flex;
+    flex-direction: column; /* Menyusun elemen anak secara vertikal */
+    justify-content: center; /* Mengatur elemen anak di tengah secara vertikal */
+    align-items: center; /* Mengatur elemen anak di tengah secara horizontal */
+    height: 10vh; /* Mengatur tinggi kontainer sama dengan tinggi viewport */
+}
+.text11 {
+    width: 266px;
+    height: 29.55px;
+    text-align: center;
+    color: #9B9B9B;
+    font-size: 20px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.text22 {
+    width: 629px;
+    height: 39.74px;
+    text-align: center;
+    color: black;
+    font-size: 24px;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Adjust the gap between items */
+    margin: 20px auto;
+    max-width: 900px; /* Restrict the maximum width of the container */
+}
+
+.image-container img {
+    max-width: 150px; /* Set a consistent size for all images */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: contain; /* Ensure images are not distorted */
+    padding: 10px;
+    background-color: white; /* Optional: Add background color around images */
+    border-radius: 5px; /* Optional: Add border radius for styling */
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.1); /* Optional: Add a subtle shadow */
+}
+.centered-text {
+    width: 342px;
+    height: 39.74px;
+    text-align: center;
+    color: #1877F2;
+    font-size: 24px;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    word-wrap: break-word;
+}
+.centered-divider {
+    width: 166px;
+    height: 0px;
+    border: 1px solid #1877F2;
+    margin: 0 auto;
+}
+.container12 {
+    width: 1200px;
+    height: 400px;
+    position: relative;
+}
+
+.background2 {
+    width: 1300px;
+    height: 450px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background: #f7fffb;
+}
+
+.text-small {
+    left: 879px;
+    top: 160px;
+    position: absolute;
+    color: #9c9c9c;
+    font-size: 16px;
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+.text-large {
+    left: 750px;
+    top: 200px;
+    position: absolute;
+    color: black;
+    font-size: 20px;
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+.image {
+    width: 400px;
+    height: 250px;
+    left: 0px;
+    top: 90px;
+    position: absolute;
+}
+
+.button-green {
+    width: 532px;
+    height: 40px;
+    left: 680px;
+    top: 250px;
+    position: absolute;
+    background: #07a419;
+    border-radius: 7px;
+}
+
+.button-white {
+    width: 532px;
+    height: 40px;
+    left: 680px;
+    top: 330px;
+    position: absolute;
+    background: white;
+    border-radius: 7px;
+    border: 1px #07a419 solid;
+}
+
+.btn-text-white {
+    display: block;
+    color: white;
+    font-size: 20px;
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+.btn-text-green {
+    display: block;
+    color: #07a419;
+    font-size: 20px;
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+.text-center {
+    left: 690px;
+    top: 70px;
+    position: absolute;
+    text-align: center;
+    color: #9c9898;
+    font-size: 16px;
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+/* Footer Styles */
+footer {
+    background-color: #263141;
+    color: white;
+    padding: 20px 0;
+    clear: both;
+    position: relative; /* Added for absolute positioning of social icons */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px; /* Atur jarak kiri sesuai kebutuhan */
+}
+
+
+.footer-section {
+    width: 30%;
+}
+
+.footer-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-menu li {
+    margin-bottom: 5px;
+}
+
+.footer-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-menu a:hover {
+    text-decoration: underline;
+}
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    position: absolute; /* Positioning social icons absolutely */
+    bottom: 20px; /* Distance from bottom */
+    left: 20px; /* Distance from left */
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.footer-bottom a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
